@@ -5,7 +5,7 @@ import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
 import image4 from '../assets/image4.jpeg'
 import { LuImagePlus } from "react-icons/lu";
-import { userDataContext } from '../context/userContext'
+import { userDataContext } from '../context/UserContext'
 import { useNavigate } from 'react-router-dom'
 import { MdKeyboardBackspace } from "react-icons/md";
 
