@@ -121,8 +121,8 @@ npm run dev
 ```
 
 The application will be available at:
-- Frontend: http://localhost:5173
-- Backend: http://localhost:3000
+- Frontend: https://virtualassistant-frontend-aoj5.onrender.com
+- Backend:  https://virtualassistant-backend-a0n2.onrender.com
 
 ## 🔌 API Endpoints
 
