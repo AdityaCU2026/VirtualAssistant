@@ -1,0 +1,18 @@
+import jwt from 'jsonwebtoken';
+const isAuth = async (req,res,next) =>{
+    try{
+      const token = req.cookies.token;
+        if(!token){
+            return res.status(400).json({message: "token not found"});
+        }
+        const verifyToken = await jwt.verify(token, process.env.JWT_SECRET);
+        req.userId = verifyToken.userId;
+        next();
+    }
+    catch(err){
+        console.log(err);
+        return res.status(500).json({message: "IsAuth middleware error"});
+    }
+}
+
+export default isAuth;
